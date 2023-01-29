@@ -17,7 +17,7 @@ final class ImageStore {
     static var shared = ImageStore()
     
     static func loadImage(name: String) -> CGImage {
-        guard let url = Bundle.main.url(forResource: name, withExtension: "jpg"),
+        guard let url = Bundle.main.url(forResource: "Images/\(name)", withExtension: "jpg"),
               let imageSource = CGImageSourceCreateWithURL(url as NSURL, nil),
               let image = CGImageSourceCreateImageAtIndex(imageSource, 0, nil) else {
             fatalError("Couldn't load image \(name).jpg from main bundle.")
