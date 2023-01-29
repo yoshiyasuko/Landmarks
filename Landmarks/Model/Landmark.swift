@@ -8,13 +8,15 @@
 import SwiftUI
 import CoreLocation
 
-struct Landmark: Hashable, Codable {
+struct Landmark: Hashable, Codable, Identifiable {
     var id: Int
     var name: String
-    fileprivate var imageName: String
-    fileprivate var coordinates: Coordinates
+    private var imageName: String
+    private var coordinates: Coordinates
     var state: String
     var park: String
+    var description: String
+    var isFavorite: Bool
     
     enum Category: String, CaseIterable, Hashable, Codable {
         case featured = "Featured"

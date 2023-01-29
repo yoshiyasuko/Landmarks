@@ -1,5 +1,5 @@
 //
-//  Data.swift
+//  ModelData.swift
 //  Landmarks
 //
 //  Created by Yoshiyasu KO on 2023/01/30.
