@@ -5,9 +5,12 @@
 //  Created by Yoshiyasu KO on 2023/01/30.
 //
 
-import SwiftUI
+import Foundation
+import Combine
 
-let landmarkData: [Landmark] = load("landmarkData.json")
+final class ModelData: ObservableObject {
+    @Published var landmarkData: [Landmark] = load("landmarkData.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

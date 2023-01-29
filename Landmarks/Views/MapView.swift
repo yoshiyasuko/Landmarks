@@ -45,6 +45,8 @@ struct MapView: View {
 }
 
 struct MapView_Previews: PreviewProvider {
+    static var landmarkData = ModelData().landmarkData
+    
     static var previews: some View {
         MapView(coordinate: landmarkData[0].locationCoordinate)
     }
