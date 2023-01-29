@@ -177,15 +177,31 @@
 		26D158592986E54D002F9260 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				26D1585E2986F4CB002F9260 /* Landmarks */,
+				26D1585F2986F4E8002F9260 /* Helpers */,
+				26D158572986E4F3002F9260 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26D1585E2986F4CB002F9260 /* Landmarks */ = {
+			isa = PBXGroup;
+			children = (
 				265239F129869D4F003A3F37 /* LandmarkDetail.swift */,
 				26523A2B2986C882003A3F37 /* LandmarkRow.swift */,
 				26D158532986D986002F9260 /* LandmarkList.swift */,
+			);
+			path = Landmarks;
+			sourceTree = "<group>";
+		};
+		26D1585F2986F4E8002F9260 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
 				26523A1E2986A955003A3F37 /* CircleImage.swift */,
 				26523A202986AA9C003A3F37 /* MapView.swift */,
-				26D158572986E4F3002F9260 /* ContentView.swift */,
 				26D1585C2986F404002F9260 /* FavoriteButton.swift */,
 			);
-			path = Views;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
